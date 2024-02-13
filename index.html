@@ -11,16 +11,16 @@
   <body class="poppins">
     <main class="bg-[#010313] h-screen bg-[url('images/background.png')] bg-no-repeat bg-center">
       <!-- ===========Home Screen ============= -->
-      <section class="">
+      <section id="homePage" class="">
         <div class="flex flex-col justify-center items-center h-screen gap-5 text-white">
           <h1 class="anton_400 text-9xl tracking-wide">Alphabet Clash</h1>
           <p class="text-xl">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-          <button class="text-3xl px-6 py-4 rounded-lg bg-white font-semibold text-black">Play now</button>
+          <button id="play_now" class="text-3xl px-6 py-4 rounded-lg bg-white font-semibold text-black">Play now</button>
         </div>
       </section>
 
       <!-- =============Play ground============= -->
-      <section class="hidden">
+      <section id="playgroundPage" class="hidden">
         <div class="flex flex-col items-center gap-16 pt-10">
           <!-- ==========screen======== -->
           <div>
@@ -28,45 +28,45 @@
               <div class="flex justify-center">
                 <h5 class="text-white bg-[#2F2941] px-6 py-3 rounded-b-2xl">Don't watch keyboard while playing...</h5>
               </div>
-              <div class="flex justify-center items-center h-full">
-                <p class="text-black text-9xl font-bold">Y</p>
+              <div class="flex justify-center mt-10">
+                <p class="text-black text-8xl font-bold" id="screenLetter">Y</p>
               </div>
             </div>
           </div>
           <!-- =========keyboard start-->
           <div>
-            <div class="flex justify-center gap-2 my-1 ">
-              <kbd class="kbd w-14 text-xl">q</kbd>
-              <kbd class="kbd w-14 text-xl">e</kbd>
-              <kbd class="kbd w-14 text-xl">w</kbd>
-              <kbd class="kbd w-14 text-xl">r</kbd>
-              <kbd class="kbd w-14 text-xl">t</kbd>
-              <kbd class="kbd w-14 text-xl">y</kbd>
-              <kbd class="kbd w-14 text-xl">u</kbd>
-              <kbd class="kbd w-14 text-xl">i</kbd>
-              <kbd class="kbd w-14 text-xl">o</kbd>
-              <kbd class="kbd w-14 text-xl">p</kbd>
+            <div class="flex justify-center gap-2 my-1">
+              <kbd id="e" class="kbd w-14 text-xl">e</kbd>
+              <kbd id="w" class="kbd w-14 text-xl">w</kbd>
+              <kbd id="q" class="kbd w-14 text-xl">q</kbd>
+              <kbd id="r" class="kbd w-14 text-xl">r</kbd>
+              <kbd id="t" class="kbd w-14 text-xl">t</kbd>
+              <kbd id="y" class="kbd w-14 text-xl">y</kbd>
+              <kbd id="u" class="kbd w-14 text-xl">u</kbd>
+              <kbd id="i" class="kbd w-14 text-xl">i</kbd>
+              <kbd id="o" class="kbd w-14 text-xl">o</kbd>
+              <kbd id="p" class="kbd w-14 text-xl">p</kbd>
             </div>
-            <div class="flex justify-center gap-2 my-1 ">
-              <kbd class="kbd w-14 text-xl">a</kbd>
-              <kbd class="kbd w-14 text-xl">s</kbd>
-              <kbd class="kbd w-14 text-xl">d</kbd>
-              <kbd class="kbd w-14 text-xl">f</kbd>
-              <kbd class="kbd w-14 text-xl">g</kbd>
-              <kbd class="kbd w-14 text-xl">h</kbd>
-              <kbd class="kbd w-14 text-xl">j</kbd>
-              <kbd class="kbd w-14 text-xl">k</kbd>
-              <kbd class="kbd w-14 text-xl">l</kbd>
+            <div class="flex justify-center gap-2 my-1">
+              <kbd id="a" class="kbd w-14 text-xl">a</kbd>
+              <kbd id="s" class="kbd w-14 text-xl">s</kbd>
+              <kbd id="d" class="kbd w-14 text-xl">d</kbd>
+              <kbd id="f" class="kbd w-14 text-xl">f</kbd>
+              <kbd id="g" class="kbd w-14 text-xl">g</kbd>
+              <kbd id="h" class="kbd w-14 text-xl">h</kbd>
+              <kbd id="j" class="kbd w-14 text-xl">j</kbd>
+              <kbd id="k" class="kbd w-14 text-xl">k</kbd>
+              <kbd id="l" class="kbd w-14 text-xl">l</kbd>
             </div>
             <div class="flex justify-center gap-2 my-1 w-full">
-              <kbd class="kbd w-14 text-xl">z</kbd>
-              <kbd class="kbd w-14 text-xl">x</kbd>
-              <kbd class="kbd w-14 text-xl">c</kbd>
-              <kbd class="kbd w-14 text-xl">v</kbd>
-              <kbd class="kbd w-14 text-xl">b</kbd>
-              <kbd class="kbd w-14 text-xl">n</kbd>
-              <kbd class="kbd w-14 text-xl">m</kbd>
-              <kbd class="kbd w-14 text-xl">/</kbd>
+              <kbd id="z" class="kbd w-14 text-xl">z</kbd>
+              <kbd id="x" class="kbd w-14 text-xl">x</kbd>
+              <kbd id="c" class="kbd w-14 text-xl">c</kbd>
+              <kbd id="v" class="kbd w-14 text-xl">v</kbd>
+              <kbd id="b" class="kbd w-14 text-xl">b</kbd>
+              <kbd id="n" class="kbd w-14 text-xl">n</kbd>
+              <kbd id="m" class="kbd w-14 text-xl">m</kbd>
+              <kbd id="/" class="kbd w-14 text-xl">/</kbd>
             </div>
           </div>
           <!-- =========keyboard end========= -->
@@ -90,14 +90,18 @@
         <div class="flex flex-col items-center justify-center min-h-screen gap-5">
           <h1>
             <span class="text-white text-7xl font-extrabold">Score: </span>
-            <span class="text-white text-7xl ">14</span>
+            <span class="text-white text-7xl">14</span>
           </h1>
 
           <button class="text-3xl px-6 py-4 rounded-lg bg-white font-semibold">Play Again</button>
 
-          <p class="text-white text-2xl ">Practice will make you Pro</p>
+          <p class="text-white text-2xl">Practice will make you Pro</p>
         </div>
       </section>
     </main>
+
+    <!-- JavaScript section -->
+    <script src="js/resource.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
