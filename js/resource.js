@@ -18,13 +18,13 @@ function keyboardColor(id){
  key.classList.add('bg-orange-500')
 }
 
-// // from keyboard remove background-color;
-// function keyboardColor(id){
-//   const key=document.getElementById(id);
-//   key.classList.remove('bg-orange-500');
-//  }
+// from keyboard remove background-color;
+function keyboardColorRemove(id){
+  const key=document.getElementById(id);
+  key.classList.remove('bg-orange-500');
+ }
 
-// in Display randomly visible letter Function;
+// random letter Create Function;
 function randomLetter() {
   const letter = `abcdefghijklmnopqrstuvwxyz/`;
   const letterArr = letter.split("");
@@ -32,5 +32,16 @@ function randomLetter() {
   const randomLetter = letterArr[randomNumber];
   return randomLetter;
 }
+
+// in Screen Random color set;
+function screenKey() {
+  const alphabet=randomLetter()
+  const screenKey = document.getElementById("screenLetter");
+  screenKey.innerText = alphabet;
+  
+  keyboardColor(alphabet);
+  
+}
+
 
 

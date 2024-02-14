@@ -29,16 +29,17 @@
                 <h5 class="text-white bg-[#2F2941] px-6 py-3 rounded-b-2xl">Don't watch keyboard while playing...</h5>
               </div>
               <div class="flex justify-center mt-10">
-                <p class="text-black text-8xl font-bold" id="screenLetter">Y</p>
+                <p class="text-black text-8xl font-bold" id="screenLetter">a</p>
               </div>
             </div>
           </div>
+
           <!-- =========keyboard start-->
           <div>
             <div class="flex justify-center gap-2 my-1">
-              <kbd id="e" class="kbd w-14 text-xl">e</kbd>
-              <kbd id="w" class="kbd w-14 text-xl">w</kbd>
               <kbd id="q" class="kbd w-14 text-xl">q</kbd>
+              <kbd id="w" class="kbd w-14 text-xl">w</kbd>
+              <kbd id="e" class="kbd w-14 text-xl">e</kbd>
               <kbd id="r" class="kbd w-14 text-xl">r</kbd>
               <kbd id="t" class="kbd w-14 text-xl">t</kbd>
               <kbd id="y" class="kbd w-14 text-xl">y</kbd>
@@ -48,7 +49,7 @@
               <kbd id="p" class="kbd w-14 text-xl">p</kbd>
             </div>
             <div class="flex justify-center gap-2 my-1">
-              <kbd id="a" class="kbd w-14 text-xl">a</kbd>
+              <kbd id="a" class="kbd w-14 text-xl bg-orange-500">a</kbd>
               <kbd id="s" class="kbd w-14 text-xl">s</kbd>
               <kbd id="d" class="kbd w-14 text-xl">d</kbd>
               <kbd id="f" class="kbd w-14 text-xl">f</kbd>
@@ -70,16 +71,18 @@
             </div>
           </div>
           <!-- =========keyboard end========= -->
+
+          <!-- Point and life div -->
           <div class="flex justify-between w-4/5">
             <button class="bg-[#894189] px-6 py-4 text-white border-0 rounded-full text-xl flex gap-2 items-center font-semibold">
               Life
               <img src="images/heart.svg" alt="" />
-              <span>1</span>
+              <span id="decrement_life">3</span>
             </button>
             <button class="bg-[#360490] px-6 py-4 text-white border-0 rounded-full text-xl flex gap-2 items-center font-semibold">
               Score
               <img src="images/score.svg" alt="" />
-              <span>1</span>
+              <span id="increment_point">0</span>
             </button>
           </div>
         </div>
