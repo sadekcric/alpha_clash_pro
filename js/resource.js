@@ -37,7 +37,7 @@ function randomLetter() {
 function screenKey() {
   const alphabet=randomLetter()
   const screenKey = document.getElementById("screenLetter");
-  screenKey.innerText = alphabet;
+  screenKey.innerText = alphabet.toUpperCase();
   
   keyboardColor(alphabet);
   

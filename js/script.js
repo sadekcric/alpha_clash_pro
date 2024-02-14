@@ -16,7 +16,7 @@ addEventListener("keyup", function (e) {
   const updatedKey = document.getElementById("screenLetter").innerText;
 
   // while You type a correct number point increment+1 and decrement+.25. and you press the wrong keyword your decrement will decrement-1;
-  if (updatedKey === e.key) {
+  if (updatedKey.toLowerCase() === e.key) {
     currentPoint += 1;
     decrementPoint += 0.1;
     keyboardColorRemove(e.key);
